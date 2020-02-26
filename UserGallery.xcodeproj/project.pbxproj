@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E4D22982406E2A5005EAD5C /* EndpointSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4D22972406E2A5005EAD5C /* EndpointSpec.swift */; };
+		3E4D229A2406E35E005EAD5C /* NetworkConfigurableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4D22992406E35E005EAD5C /* NetworkConfigurableSpec.swift */; };
+		3E4D229D2406E3BA005EAD5C /* APIEndpointSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4D229C2406E3BA005EAD5C /* APIEndpointSpec.swift */; };
+		3E4D22A02406EF07005EAD5C /* DefaultUserRepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4D229F2406EF07005EAD5C /* DefaultUserRepositorySpec.swift */; };
+		3E4D22A32406F1A4005EAD5C /* ServiceClientMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4D22A22406F1A4005EAD5C /* ServiceClientMocks.swift */; };
+		3E4D22A72406FDA6005EAD5C /* AlbumRepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4D22A62406FDA6005EAD5C /* AlbumRepositorySpec.swift */; };
+		3E4D22AA24070824005EAD5C /* PhotoRepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4D22A924070824005EAD5C /* PhotoRepositorySpec.swift */; };
+		3E4D22AE24070DE8005EAD5C /* UserDtoToEntityMapperSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4D22AD24070DE8005EAD5C /* UserDtoToEntityMapperSpec.swift */; };
 		3E81A5B6240407B200ABC675 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E81A5B5240407B200ABC675 /* AppDelegate.swift */; };
 		3E81A5BB240407B200ABC675 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E81A5B9240407B200ABC675 /* Main.storyboard */; };
 		3E81A5BE240407B200ABC675 /* UserGallery.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3E81A5BC240407B200ABC675 /* UserGallery.xcdatamodeld */; };
@@ -63,6 +71,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E4D22972406E2A5005EAD5C /* EndpointSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointSpec.swift; sourceTree = "<group>"; };
+		3E4D22992406E35E005EAD5C /* NetworkConfigurableSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfigurableSpec.swift; sourceTree = "<group>"; };
+		3E4D229C2406E3BA005EAD5C /* APIEndpointSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpointSpec.swift; sourceTree = "<group>"; };
+		3E4D229F2406EF07005EAD5C /* DefaultUserRepositorySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultUserRepositorySpec.swift; sourceTree = "<group>"; };
+		3E4D22A22406F1A4005EAD5C /* ServiceClientMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceClientMocks.swift; sourceTree = "<group>"; };
+		3E4D22A62406FDA6005EAD5C /* AlbumRepositorySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumRepositorySpec.swift; sourceTree = "<group>"; };
+		3E4D22A924070824005EAD5C /* PhotoRepositorySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRepositorySpec.swift; sourceTree = "<group>"; };
+		3E4D22AD24070DE8005EAD5C /* UserDtoToEntityMapperSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDtoToEntityMapperSpec.swift; sourceTree = "<group>"; };
 		3E81A5B2240407B200ABC675 /* UserGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E81A5B5240407B200ABC675 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E81A5BA240407B200ABC675 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -130,6 +146,92 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E4D22952406E27D005EAD5C /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				3E4D22A12406F191005EAD5C /* Mocks */,
+				3E4D229E2406EEDE005EAD5C /* Repository */,
+				3E4D229B2406E392005EAD5C /* Network */,
+				3E4D22962406E287005EAD5C /* Infrastructure */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		3E4D22962406E287005EAD5C /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				3E4D22972406E2A5005EAD5C /* EndpointSpec.swift */,
+				3E4D22992406E35E005EAD5C /* NetworkConfigurableSpec.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		3E4D229B2406E392005EAD5C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3E4D229C2406E3BA005EAD5C /* APIEndpointSpec.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3E4D229E2406EEDE005EAD5C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				3E4D22A824070802005EAD5C /* Photos */,
+				3E4D22A52406FABC005EAD5C /* Albums */,
+				3E4D22A42406FAB7005EAD5C /* Users */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		3E4D22A12406F191005EAD5C /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				3E4D22A22406F1A4005EAD5C /* ServiceClientMocks.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		3E4D22A42406FAB7005EAD5C /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				3E4D229F2406EF07005EAD5C /* DefaultUserRepositorySpec.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		3E4D22A52406FABC005EAD5C /* Albums */ = {
+			isa = PBXGroup;
+			children = (
+				3E4D22A62406FDA6005EAD5C /* AlbumRepositorySpec.swift */,
+			);
+			path = Albums;
+			sourceTree = "<group>";
+		};
+		3E4D22A824070802005EAD5C /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				3E4D22A924070824005EAD5C /* PhotoRepositorySpec.swift */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		3E4D22AB24070DB2005EAD5C /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				3E4D22AC24070DCD005EAD5C /* Mappers */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		3E4D22AC24070DCD005EAD5C /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				3E4D22AD24070DE8005EAD5C /* UserDtoToEntityMapperSpec.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
 		3E81A5A9240407B200ABC675 = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +271,8 @@
 		3E81A5CC240407B600ABC675 /* UserGalleryTests */ = {
 			isa = PBXGroup;
 			children = (
+				3E4D22AB24070DB2005EAD5C /* Domain */,
+				3E4D22952406E27D005EAD5C /* DataLayer */,
 				3E81A5CD240407B600ABC675 /* UserGalleryTests.swift */,
 				3E81A5CF240407B600ABC675 /* Info.plist */,
 			);
@@ -642,7 +746,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E4D22A32406F1A4005EAD5C /* ServiceClientMocks.swift in Sources */,
+				3E4D22AA24070824005EAD5C /* PhotoRepositorySpec.swift in Sources */,
+				3E4D229A2406E35E005EAD5C /* NetworkConfigurableSpec.swift in Sources */,
 				3E81A5CE240407B600ABC675 /* UserGalleryTests.swift in Sources */,
+				3E4D229D2406E3BA005EAD5C /* APIEndpointSpec.swift in Sources */,
+				3E4D22A02406EF07005EAD5C /* DefaultUserRepositorySpec.swift in Sources */,
+				3E4D22982406E2A5005EAD5C /* EndpointSpec.swift in Sources */,
+				3E4D22A72406FDA6005EAD5C /* AlbumRepositorySpec.swift in Sources */,
+				3E4D22AE24070DE8005EAD5C /* UserDtoToEntityMapperSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

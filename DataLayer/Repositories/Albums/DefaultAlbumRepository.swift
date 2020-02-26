@@ -17,6 +17,7 @@ final class DefaultAlbumRepository {
 }
 
 extension DefaultAlbumRepository: AlbumRepository {
+    @discardableResult
     func getAlbumByUserID(userId: Int, completion: @escaping (ServiceStatus<AlbumDTO>) -> Void) -> URLSessionDataTask {
         return serviceClient.request(with: APIEndpoint.getAlbums(userId: userId), completion: completion)
     }

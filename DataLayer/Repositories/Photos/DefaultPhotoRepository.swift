@@ -17,6 +17,7 @@ final class DefaultPhotoRepository {
 }
 
 extension DefaultPhotoRepository: PhotoRepository {
+    @discardableResult
     func getPhotosByAlbumID(albumID: Int, completion: @escaping (ServiceStatus<PhotoDTO>) -> Void) -> URLSessionDataTask {
         return serviceClient.request(with: APIEndpoint.getPhotos(albumId: albumID), completion: completion)
     }
