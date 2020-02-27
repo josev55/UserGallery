@@ -20,9 +20,10 @@ class DefaultGetUserDetailUseCase: GetUserDetailUseCase {
     }
     
     func execute(userId: Int, completion: @escaping (UserEntity?) -> Void) {
-        if let user = userRepository.getUser(userId: userId) {
-            completion(UserDtoToEntityMapper().map(user))
+        guard let user = userRepository.getUser(userId: userId) else {
+            completion(nil)
+            return
         }
-        completion(nil)
+        completion(UserDtoToEntityMapper().map(user))
     }
 }

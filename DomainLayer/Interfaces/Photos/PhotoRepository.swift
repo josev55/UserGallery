@@ -9,5 +9,6 @@
 import Foundation
 
 protocol PhotoRepository {
+    @discardableResult
     func getPhotosByAlbumID(albumID: Int, completion: @escaping (ServiceStatus<PhotoDTO>) -> Void) -> URLSessionDataTask
 }

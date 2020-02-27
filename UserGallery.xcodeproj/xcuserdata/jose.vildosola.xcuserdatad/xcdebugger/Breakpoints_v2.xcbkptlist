@@ -9,61 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DataLayer/Infrastructure/ServiceClient.swift"
-            timestampString = "604333028.631189"
+            filePath = "UserGalleryTests/Domain/UseCases/Users/GetUserDetailUseCaseSpec.swift"
+            timestampString = "604511601.865127"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "request(with:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PresentationLayer/Modules/UserList/Presenter/UserListPresenter.swift"
-            timestampString = "604372928.950037"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "getUsers()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PresentationLayer/Modules/UserDetail/View/UserDetailViewController.swift"
-            timestampString = "604373234.328717"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "setUser(model:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DomainLayer/UseCases/Users/GetUserDetailUseCase.swift"
-            timestampString = "604373010.065734"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "execute(userId:completion:)"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "testGetUserDetailSuccess()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -74,13 +26,61 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DataLayer/Repositories/Users/DefaultUserRepository.swift"
-            timestampString = "604373234.328784"
+            timestampString = "604508199.180654"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "users"
-            landmarkType = "24">
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "getUser(userId:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UserGallery.DefaultUserRepository.getUser(userId: Swift.Int) -&gt; Swift.Optional&lt;UserGallery.UserDTO&gt;"
+                  moduleName = "UserGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jose.vildosola/Documents/workspace/Own/UserGallery/DataLayer/Repositories/Users/DefaultUserRepository.swift"
+                  timestampString = "604508069.290409"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "83">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (UserGallery.UserDTO) -&gt; Swift.Bool in UserGallery.DefaultUserRepository.getUser(userId: Swift.Int) -&gt; Swift.Optional&lt;UserGallery.UserDTO&gt;"
+                  moduleName = "UserGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jose.vildosola/Documents/workspace/Own/UserGallery/DataLayer/Repositories/Users/DefaultUserRepository.swift"
+                  timestampString = "604508069.292217"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DataLayer/Repositories/Users/DefaultUserRepository.swift"
+            timestampString = "604508199.180706"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "getUser(userId:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

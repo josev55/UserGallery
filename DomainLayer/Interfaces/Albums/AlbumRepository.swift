@@ -9,5 +9,6 @@
 import Foundation
 
 protocol AlbumRepository {
+    @discardableResult
     func getAlbumByUserID(userId: Int, completion: @escaping (ServiceStatus<AlbumDTO>)  -> Void) -> URLSessionDataTask
 }
