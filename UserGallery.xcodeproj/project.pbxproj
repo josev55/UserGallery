@@ -13,6 +13,12 @@
 		3E45B43C2408172D0003DA39 /* UserListPresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E45B43B2408172D0003DA39 /* UserListPresenterSpec.swift */; };
 		3E45B43F2408179B0003DA39 /* UserListViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E45B43E2408179B0003DA39 /* UserListViewMock.swift */; };
 		3E45B441240818D10003DA39 /* GetUserUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E45B440240818D10003DA39 /* GetUserUseCaseMock.swift */; };
+		3E45B449240836BA0003DA39 /* GetAlbumUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E45B448240836BA0003DA39 /* GetAlbumUseCaseSpec.swift */; };
+		3E45B44C240836ED0003DA39 /* MockAlbumRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E45B44B240836ED0003DA39 /* MockAlbumRepository.swift */; };
+		3E45B45224084B480003DA39 /* GetAlbumsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E45B44E24084A220003DA39 /* GetAlbumsUseCase.swift */; };
+		3E45B45324084B750003DA39 /* AlbumEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E45B45024084A680003DA39 /* AlbumEntity.swift */; };
+		3E45B45624084E630003DA39 /* AlbumDtoToEntityMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E45B45424084E550003DA39 /* AlbumDtoToEntityMapper.swift */; };
+		3E45B45824084ECD0003DA39 /* AlbumDtoToEntityMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E45B45724084ECD0003DA39 /* AlbumDtoToEntityMapper.swift */; };
 		3E4D22982406E2A5005EAD5C /* EndpointSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4D22972406E2A5005EAD5C /* EndpointSpec.swift */; };
 		3E4D229A2406E35E005EAD5C /* NetworkConfigurableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4D22992406E35E005EAD5C /* NetworkConfigurableSpec.swift */; };
 		3E4D229D2406E3BA005EAD5C /* APIEndpointSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4D229C2406E3BA005EAD5C /* APIEndpointSpec.swift */; };
@@ -82,6 +88,12 @@
 		3E45B43B2408172D0003DA39 /* UserListPresenterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListPresenterSpec.swift; sourceTree = "<group>"; };
 		3E45B43E2408179B0003DA39 /* UserListViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewMock.swift; sourceTree = "<group>"; };
 		3E45B440240818D10003DA39 /* GetUserUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserUseCaseMock.swift; sourceTree = "<group>"; };
+		3E45B448240836BA0003DA39 /* GetAlbumUseCaseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAlbumUseCaseSpec.swift; sourceTree = "<group>"; };
+		3E45B44B240836ED0003DA39 /* MockAlbumRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAlbumRepository.swift; sourceTree = "<group>"; };
+		3E45B44E24084A220003DA39 /* GetAlbumsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAlbumsUseCase.swift; sourceTree = "<group>"; };
+		3E45B45024084A680003DA39 /* AlbumEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumEntity.swift; sourceTree = "<group>"; };
+		3E45B45424084E550003DA39 /* AlbumDtoToEntityMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDtoToEntityMapper.swift; sourceTree = "<group>"; };
+		3E45B45724084ECD0003DA39 /* AlbumDtoToEntityMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDtoToEntityMapper.swift; sourceTree = "<group>"; };
 		3E4D22972406E2A5005EAD5C /* EndpointSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointSpec.swift; sourceTree = "<group>"; };
 		3E4D22992406E35E005EAD5C /* NetworkConfigurableSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfigurableSpec.swift; sourceTree = "<group>"; };
 		3E4D229C2406E3BA005EAD5C /* APIEndpointSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpointSpec.swift; sourceTree = "<group>"; };
@@ -159,6 +171,7 @@
 		3E35F9212407FF0500EFDCC5 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				3E45B447240835CF0003DA39 /* Albums */,
 				3E35F9222407FF7200EFDCC5 /* Users */,
 			);
 			path = UseCases;
@@ -206,6 +219,30 @@
 				3E45B440240818D10003DA39 /* GetUserUseCaseMock.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		3E45B447240835CF0003DA39 /* Albums */ = {
+			isa = PBXGroup;
+			children = (
+				3E45B448240836BA0003DA39 /* GetAlbumUseCaseSpec.swift */,
+			);
+			path = Albums;
+			sourceTree = "<group>";
+		};
+		3E45B44A240836D40003DA39 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				3E45B44B240836ED0003DA39 /* MockAlbumRepository.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		3E45B44D24084A030003DA39 /* Albums */ = {
+			isa = PBXGroup;
+			children = (
+				3E45B44E24084A220003DA39 /* GetAlbumsUseCase.swift */,
+			);
+			path = Albums;
 			sourceTree = "<group>";
 		};
 		3E4D22952406E27D005EAD5C /* DataLayer */ = {
@@ -281,6 +318,7 @@
 		3E4D22AB24070DB2005EAD5C /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				3E45B44A240836D40003DA39 /* Mocks */,
 				3E35F9212407FF0500EFDCC5 /* UseCases */,
 				3E4D22AC24070DCD005EAD5C /* Mappers */,
 			);
@@ -291,6 +329,7 @@
 			isa = PBXGroup;
 			children = (
 				3E4D22AD24070DE8005EAD5C /* UserDtoToEntityMapperSpec.swift */,
+				3E45B45724084ECD0003DA39 /* AlbumDtoToEntityMapper.swift */,
 			);
 			path = Mappers;
 			sourceTree = "<group>";
@@ -476,6 +515,7 @@
 			isa = PBXGroup;
 			children = (
 				3E81A6262404AC4500ABC675 /* UserEntity.swift */,
+				3E45B45024084A680003DA39 /* AlbumEntity.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -507,6 +547,7 @@
 		3E81A6222404AB4100ABC675 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				3E45B44D24084A030003DA39 /* Albums */,
 				3E81A6232404AB7100ABC675 /* Users */,
 			);
 			path = UseCases;
@@ -525,6 +566,7 @@
 			isa = PBXGroup;
 			children = (
 				3E81A62B2404B03800ABC675 /* UserDtoToEntityMapper.swift */,
+				3E45B45424084E550003DA39 /* AlbumDtoToEntityMapper.swift */,
 			);
 			path = Mappers;
 			sourceTree = "<group>";
@@ -767,13 +809,16 @@
 			files = (
 				3E81A61F2404A15F00ABC675 /* UserContainer.swift in Sources */,
 				3E81A6422404C7F700ABC675 /* UserListPresenter.swift in Sources */,
+				3E45B45224084B480003DA39 /* GetAlbumsUseCase.swift in Sources */,
 				3E81A5FD240429EA00ABC675 /* UserDTO.swift in Sources */,
+				3E45B45624084E630003DA39 /* AlbumDtoToEntityMapper.swift in Sources */,
 				3E81A6272404AC4500ABC675 /* UserEntity.swift in Sources */,
 				3ED42D752405769F000FED03 /* UserDetailView.swift in Sources */,
 				3ED42D6A2405654D000FED03 /* UserDetailPresenter.swift in Sources */,
 				3E81A6212404A68000ABC675 /* AppContainer.swift in Sources */,
 				3ED42D73240574B1000FED03 /* UserDetailEntityToViewModelMapper.swift in Sources */,
 				3E81A6402404C15900ABC675 /* UserTableViewCell.swift in Sources */,
+				3E45B45324084B750003DA39 /* AlbumEntity.swift in Sources */,
 				3E81A62A2404AFD000ABC675 /* Mapper.swift in Sources */,
 				3E81A6442404C89200ABC675 /* UserListView.swift in Sources */,
 				3E81A6472404CAF100ABC675 /* UserEntityToViewModelMapper.swift in Sources */,
@@ -818,11 +863,14 @@
 				3E4D22A02406EF07005EAD5C /* DefaultUserRepositorySpec.swift in Sources */,
 				3E45B439240813F20003DA39 /* UserEntityToViewModelMapperSpec.swift in Sources */,
 				3E45B43F2408179B0003DA39 /* UserListViewMock.swift in Sources */,
+				3E45B45824084ECD0003DA39 /* AlbumDtoToEntityMapper.swift in Sources */,
 				3E45B441240818D10003DA39 /* GetUserUseCaseMock.swift in Sources */,
 				3E35F9242407FF8A00EFDCC5 /* GetUsersUseCaseSpec.swift in Sources */,
+				3E45B449240836BA0003DA39 /* GetAlbumUseCaseSpec.swift in Sources */,
 				3E4D22982406E2A5005EAD5C /* EndpointSpec.swift in Sources */,
 				3E4D22A72406FDA6005EAD5C /* AlbumRepositorySpec.swift in Sources */,
 				3E4D22AE24070DE8005EAD5C /* UserDtoToEntityMapperSpec.swift in Sources */,
+				3E45B44C240836ED0003DA39 /* MockAlbumRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
