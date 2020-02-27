@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E35F9242407FF8A00EFDCC5 /* GetUsersUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E35F9232407FF8A00EFDCC5 /* GetUsersUseCaseSpec.swift */; };
+		3E35F9262408072000EFDCC5 /* GetUserDetailUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E35F9252408072000EFDCC5 /* GetUserDetailUseCaseSpec.swift */; };
+		3E45B439240813F20003DA39 /* UserEntityToViewModelMapperSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E45B438240813F20003DA39 /* UserEntityToViewModelMapperSpec.swift */; };
+		3E45B43C2408172D0003DA39 /* UserListPresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E45B43B2408172D0003DA39 /* UserListPresenterSpec.swift */; };
+		3E45B43F2408179B0003DA39 /* UserListViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E45B43E2408179B0003DA39 /* UserListViewMock.swift */; };
+		3E45B441240818D10003DA39 /* GetUserUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E45B440240818D10003DA39 /* GetUserUseCaseMock.swift */; };
 		3E4D22982406E2A5005EAD5C /* EndpointSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4D22972406E2A5005EAD5C /* EndpointSpec.swift */; };
 		3E4D229A2406E35E005EAD5C /* NetworkConfigurableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4D22992406E35E005EAD5C /* NetworkConfigurableSpec.swift */; };
 		3E4D229D2406E3BA005EAD5C /* APIEndpointSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4D229C2406E3BA005EAD5C /* APIEndpointSpec.swift */; };
@@ -20,7 +26,6 @@
 		3E81A5BE240407B200ABC675 /* UserGallery.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3E81A5BC240407B200ABC675 /* UserGallery.xcdatamodeld */; };
 		3E81A5C0240407B600ABC675 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E81A5BF240407B600ABC675 /* Assets.xcassets */; };
 		3E81A5C3240407B600ABC675 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E81A5C1240407B600ABC675 /* LaunchScreen.storyboard */; };
-		3E81A5CE240407B600ABC675 /* UserGalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E81A5CD240407B600ABC675 /* UserGalleryTests.swift */; };
 		3E81A5F92404294200ABC675 /* PhotoDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E81A5F82404294200ABC675 /* PhotoDTO.swift */; };
 		3E81A5FB2404299100ABC675 /* AlbumDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E81A5FA2404299100ABC675 /* AlbumDTO.swift */; };
 		3E81A5FD240429EA00ABC675 /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E81A5FC240429EA00ABC675 /* UserDTO.swift */; };
@@ -48,7 +53,7 @@
 		3E81A6402404C15900ABC675 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E81A63F2404C15900ABC675 /* UserTableViewCell.swift */; };
 		3E81A6422404C7F700ABC675 /* UserListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E81A6412404C7F700ABC675 /* UserListPresenter.swift */; };
 		3E81A6442404C89200ABC675 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E81A6432404C89200ABC675 /* UserListView.swift */; };
-		3E81A6472404CAF100ABC675 /* UserEntityToViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E81A6462404CAF100ABC675 /* UserEntityToViewModel.swift */; };
+		3E81A6472404CAF100ABC675 /* UserEntityToViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E81A6462404CAF100ABC675 /* UserEntityToViewModelMapper.swift */; };
 		3ED42D6124055F7D000FED03 /* LoadingIndicatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED42D6024055F7D000FED03 /* LoadingIndicatorManager.swift */; };
 		3ED42D68240564A4000FED03 /* UserDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ED42D67240564A4000FED03 /* UserDetail.storyboard */; };
 		3ED42D6A2405654D000FED03 /* UserDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED42D692405654D000FED03 /* UserDetailPresenter.swift */; };
@@ -71,6 +76,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E35F9232407FF8A00EFDCC5 /* GetUsersUseCaseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUsersUseCaseSpec.swift; sourceTree = "<group>"; };
+		3E35F9252408072000EFDCC5 /* GetUserDetailUseCaseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserDetailUseCaseSpec.swift; sourceTree = "<group>"; };
+		3E45B438240813F20003DA39 /* UserEntityToViewModelMapperSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntityToViewModelMapperSpec.swift; sourceTree = "<group>"; };
+		3E45B43B2408172D0003DA39 /* UserListPresenterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListPresenterSpec.swift; sourceTree = "<group>"; };
+		3E45B43E2408179B0003DA39 /* UserListViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewMock.swift; sourceTree = "<group>"; };
+		3E45B440240818D10003DA39 /* GetUserUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserUseCaseMock.swift; sourceTree = "<group>"; };
 		3E4D22972406E2A5005EAD5C /* EndpointSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointSpec.swift; sourceTree = "<group>"; };
 		3E4D22992406E35E005EAD5C /* NetworkConfigurableSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfigurableSpec.swift; sourceTree = "<group>"; };
 		3E4D229C2406E3BA005EAD5C /* APIEndpointSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpointSpec.swift; sourceTree = "<group>"; };
@@ -87,7 +98,6 @@
 		3E81A5C2240407B600ABC675 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E81A5C4240407B600ABC675 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E81A5C9240407B600ABC675 /* UserGalleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UserGalleryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E81A5CD240407B600ABC675 /* UserGalleryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGalleryTests.swift; sourceTree = "<group>"; };
 		3E81A5CF240407B600ABC675 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E81A5F82404294200ABC675 /* PhotoDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDTO.swift; sourceTree = "<group>"; };
 		3E81A5FA2404299100ABC675 /* AlbumDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDTO.swift; sourceTree = "<group>"; };
@@ -116,7 +126,7 @@
 		3E81A63F2404C15900ABC675 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		3E81A6412404C7F700ABC675 /* UserListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListPresenter.swift; sourceTree = "<group>"; };
 		3E81A6432404C89200ABC675 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
-		3E81A6462404CAF100ABC675 /* UserEntityToViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntityToViewModel.swift; sourceTree = "<group>"; };
+		3E81A6462404CAF100ABC675 /* UserEntityToViewModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntityToViewModelMapper.swift; sourceTree = "<group>"; };
 		3ED42D6024055F7D000FED03 /* LoadingIndicatorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorManager.swift; sourceTree = "<group>"; };
 		3ED42D67240564A4000FED03 /* UserDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserDetail.storyboard; sourceTree = "<group>"; };
 		3ED42D692405654D000FED03 /* UserDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailPresenter.swift; sourceTree = "<group>"; };
@@ -146,6 +156,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E35F9212407FF0500EFDCC5 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				3E35F9222407FF7200EFDCC5 /* Users */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		3E35F9222407FF7200EFDCC5 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				3E35F9232407FF8A00EFDCC5 /* GetUsersUseCaseSpec.swift */,
+				3E35F9252408072000EFDCC5 /* GetUserDetailUseCaseSpec.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		3E45B436240812470003DA39 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				3E45B43D2408178A0003DA39 /* Mocks */,
+				3E45B43A240817040003DA39 /* Presenter */,
+				3E45B437240813890003DA39 /* Mappers */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		3E45B437240813890003DA39 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				3E45B438240813F20003DA39 /* UserEntityToViewModelMapperSpec.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		3E45B43A240817040003DA39 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3E45B43B2408172D0003DA39 /* UserListPresenterSpec.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3E45B43D2408178A0003DA39 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				3E45B43E2408179B0003DA39 /* UserListViewMock.swift */,
+				3E45B440240818D10003DA39 /* GetUserUseCaseMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		3E4D22952406E27D005EAD5C /* DataLayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +281,7 @@
 		3E4D22AB24070DB2005EAD5C /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				3E35F9212407FF0500EFDCC5 /* UseCases */,
 				3E4D22AC24070DCD005EAD5C /* Mappers */,
 			);
 			path = Domain;
@@ -271,9 +334,9 @@
 		3E81A5CC240407B600ABC675 /* UserGalleryTests */ = {
 			isa = PBXGroup;
 			children = (
+				3E45B436240812470003DA39 /* Presentation */,
 				3E4D22AB24070DB2005EAD5C /* Domain */,
 				3E4D22952406E27D005EAD5C /* DataLayer */,
-				3E81A5CD240407B600ABC675 /* UserGalleryTests.swift */,
 				3E81A5CF240407B600ABC675 /* Info.plist */,
 			);
 			path = UserGalleryTests;
@@ -532,7 +595,7 @@
 		3E81A6452404CA9E00ABC675 /* Mappers */ = {
 			isa = PBXGroup;
 			children = (
-				3E81A6462404CAF100ABC675 /* UserEntityToViewModel.swift */,
+				3E81A6462404CAF100ABC675 /* UserEntityToViewModelMapper.swift */,
 			);
 			path = Mappers;
 			sourceTree = "<group>";
@@ -713,7 +776,7 @@
 				3E81A6402404C15900ABC675 /* UserTableViewCell.swift in Sources */,
 				3E81A62A2404AFD000ABC675 /* Mapper.swift in Sources */,
 				3E81A6442404C89200ABC675 /* UserListView.swift in Sources */,
-				3E81A6472404CAF100ABC675 /* UserEntityToViewModel.swift in Sources */,
+				3E81A6472404CAF100ABC675 /* UserEntityToViewModelMapper.swift in Sources */,
 				3ED42D6C240565C4000FED03 /* UserDetailViewController.swift in Sources */,
 				3E81A6342404B7A500ABC675 /* UIViewController+Storyboard.swift in Sources */,
 				3ED42D6124055F7D000FED03 /* LoadingIndicatorManager.swift in Sources */,
@@ -746,12 +809,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E45B43C2408172D0003DA39 /* UserListPresenterSpec.swift in Sources */,
 				3E4D22A32406F1A4005EAD5C /* ServiceClientMocks.swift in Sources */,
 				3E4D22AA24070824005EAD5C /* PhotoRepositorySpec.swift in Sources */,
 				3E4D229A2406E35E005EAD5C /* NetworkConfigurableSpec.swift in Sources */,
-				3E81A5CE240407B600ABC675 /* UserGalleryTests.swift in Sources */,
+				3E35F9262408072000EFDCC5 /* GetUserDetailUseCaseSpec.swift in Sources */,
 				3E4D229D2406E3BA005EAD5C /* APIEndpointSpec.swift in Sources */,
 				3E4D22A02406EF07005EAD5C /* DefaultUserRepositorySpec.swift in Sources */,
+				3E45B439240813F20003DA39 /* UserEntityToViewModelMapperSpec.swift in Sources */,
+				3E45B43F2408179B0003DA39 /* UserListViewMock.swift in Sources */,
+				3E45B441240818D10003DA39 /* GetUserUseCaseMock.swift in Sources */,
+				3E35F9242407FF8A00EFDCC5 /* GetUsersUseCaseSpec.swift in Sources */,
 				3E4D22982406E2A5005EAD5C /* EndpointSpec.swift in Sources */,
 				3E4D22A72406FDA6005EAD5C /* AlbumRepositorySpec.swift in Sources */,
 				3E4D22AE24070DE8005EAD5C /* UserDtoToEntityMapperSpec.swift in Sources */,

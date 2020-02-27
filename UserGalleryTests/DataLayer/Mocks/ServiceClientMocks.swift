@@ -11,7 +11,8 @@ import Foundation
 
 class ServiceClientSuccessMock: ServiceClient {
     func request<T>(with endpoint: Endpoint, completion: @escaping (ServiceStatus<T>) -> Void) -> URLSessionDataTask where T : Decodable {
-        completion(.success(nil))
+        let mockUser = UserDTO(id: 0, name: "J", username: "JV", email: "j@v.cl", address: AddressDTO(street: "", suite: "", city: "", zipcode: "", geo: GeoDTO(lat: "0.1", lng: "0.2")), phone: "", website: "", company: CompanyDTO(name: "", catchPhrase: "", bs: ""))
+        completion(.success([mockUser] as? T))
         return URLSessionDataTask()
     }
 }

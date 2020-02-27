@@ -27,6 +27,7 @@ class DefaultUserListPresenter: UserListPresenter {
         getUsersUseCase.execute { (userEntities, error) in
             self.view.hideLoading()
             if let _ = error {
+                // TODO: MANEJAR CASO DONDE FALLA TANTO REMOTO COMO LOCAL
                 debugPrint(error!)
             } else {
                 self.view.setUsers(userEntities!.map({ (user) -> UserListViewModel in
