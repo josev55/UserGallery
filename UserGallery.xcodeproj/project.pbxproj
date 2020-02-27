@@ -186,14 +186,12 @@
 			path = Users;
 			sourceTree = "<group>";
 		};
-		3E45B436240812470003DA39 /* Presentation */ = {
+		3E45B436240812470003DA39 /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
-				3E45B43D2408178A0003DA39 /* Mocks */,
-				3E45B43A240817040003DA39 /* Presenter */,
-				3E45B437240813890003DA39 /* Mappers */,
+				3E7E6045240858930095A46A /* UserList */,
 			);
-			path = Presentation;
+			path = PresentationLayer;
 			sourceTree = "<group>";
 		};
 		3E45B437240813890003DA39 /* Mappers */ = {
@@ -315,14 +313,14 @@
 			path = Photos;
 			sourceTree = "<group>";
 		};
-		3E4D22AB24070DB2005EAD5C /* Domain */ = {
+		3E4D22AB24070DB2005EAD5C /* DomainLayer */ = {
 			isa = PBXGroup;
 			children = (
 				3E45B44A240836D40003DA39 /* Mocks */,
 				3E35F9212407FF0500EFDCC5 /* UseCases */,
 				3E4D22AC24070DCD005EAD5C /* Mappers */,
 			);
-			path = Domain;
+			path = DomainLayer;
 			sourceTree = "<group>";
 		};
 		3E4D22AC24070DCD005EAD5C /* Mappers */ = {
@@ -332,6 +330,16 @@
 				3E45B45724084ECD0003DA39 /* AlbumDtoToEntityMapper.swift */,
 			);
 			path = Mappers;
+			sourceTree = "<group>";
+		};
+		3E7E6045240858930095A46A /* UserList */ = {
+			isa = PBXGroup;
+			children = (
+				3E45B43D2408178A0003DA39 /* Mocks */,
+				3E45B43A240817040003DA39 /* Presenter */,
+				3E45B437240813890003DA39 /* Mappers */,
+			);
+			path = UserList;
 			sourceTree = "<group>";
 		};
 		3E81A5A9240407B200ABC675 = {
@@ -373,8 +381,8 @@
 		3E81A5CC240407B600ABC675 /* UserGalleryTests */ = {
 			isa = PBXGroup;
 			children = (
-				3E45B436240812470003DA39 /* Presentation */,
-				3E4D22AB24070DB2005EAD5C /* Domain */,
+				3E45B436240812470003DA39 /* PresentationLayer */,
+				3E4D22AB24070DB2005EAD5C /* DomainLayer */,
 				3E4D22952406E27D005EAD5C /* DataLayer */,
 				3E81A5CF240407B600ABC675 /* Info.plist */,
 			);

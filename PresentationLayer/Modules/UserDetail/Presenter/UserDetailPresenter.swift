@@ -17,9 +17,11 @@ class DefaultUserDetailPresenter: UserDetailPresenter {
     var view: UserDetailView!
     
     private var getUserDetailUseCase: GetUserDetailUseCase
+    private var getAlbumsUseCase: GetAlbumsUseCase
     
-    init(getUserDetailUseCase: GetUserDetailUseCase) {
+    init(getUserDetailUseCase: GetUserDetailUseCase, getAlbumsUseCase: GetAlbumsUseCase) {
         self.getUserDetailUseCase = getUserDetailUseCase
+        self.getAlbumsUseCase = getAlbumsUseCase
     }
     
     func getUserDetail(userId: Int) {
